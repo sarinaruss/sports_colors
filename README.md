@@ -58,6 +58,40 @@ Teams are keyed by nickname (`"bruins"`, `"maple_leafs"`, `"golden_knights"`).
 Names are case-insensitive and spaces, hyphens, and underscores are
 interchangeable (`"Maple Leafs"`, `"maple-leafs"`, and `"maple_leafs"` all work).
 
+## Examples
+
+Sample charts built with the library live in [`examples/`](examples/). In each
+script the team's two colors come from a single `hc.get_colors(team)` call, then
+flow straight into Matplotlib.
+
+```bash
+pip install .          # installs hockey-colors + matplotlib
+cd examples
+python maple_leafs_wins.py
+python avalanche_ot_goals_vs_assists.py
+```
+
+Each script writes its PNG next to itself.
+
+### Toronto Maple Leafs — regular-season wins, last 10 seasons
+
+Line/area chart in Leafs blue & white. Hollow markers flag the
+COVID-shortened seasons.
+([source](examples/maple_leafs_wins.py))
+
+![Maple Leafs wins](examples/maple_leafs_wins.png)
+
+### Colorado Avalanche — career OT goals vs. assists
+
+Grouped bars in Avalanche burgundy & blue for the franchise's top-5 overtime
+goal scorers.
+([source](examples/avalanche_ot_goals_vs_assists.py))
+
+![Avalanche OT goals vs assists](examples/avalanche_ot_goals_vs_assists.png)
+
+> Data: Maple Leafs win totals from NHL season-by-season records; Avalanche OT
+> figures from the NHL regular-season skater records.
+
 ## License
 
 MIT

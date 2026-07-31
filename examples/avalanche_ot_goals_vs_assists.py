@@ -1,6 +1,6 @@
 """Colorado Avalanche — career overtime goals vs. assists (top 5 OT goal scorers).
 
-Demonstrates hockey_colors: both series colors come from a single
+Demonstrates vizlib: both series colors come from a single
 ``get_colors("avalanche")`` call. Data is from the NHL COL regular-season
 skater records. Run this file to regenerate avalanche_ot_goals_vs_assists.png.
 """
@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 import numpy as np
 
-import hockey_colors as hc
+import vizlib as vz
 
-burgundy, blue = hc.get_colors("avalanche")   # ('#6F263D', '#236192')
+burgundy, blue = vz.get_colors("avalanche")   # ('#6F263D', '#236192')
 BG, INK, MUTE = "#F6F3F1", "#2B2B2B", "#8A8A8A"
 
 players = ["Nathan\nMacKinnon", "Milan\nHejduk", "Gabriel\nLandeskog",

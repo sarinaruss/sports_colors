@@ -1,6 +1,6 @@
 """Toronto Maple Leafs — regular-season wins over the last 10 seasons.
 
-Demonstrates hockey_colors on a line/area chart: the team's two colors come
+Demonstrates vizlib on a line/area chart: the team's two colors come
 from a single ``get_colors("maple_leafs")`` call (blue for the line/fill and
 solid markers, white for the hollow COVID-season markers). Run this file to
 regenerate maple_leafs_wins.png.
@@ -9,9 +9,9 @@ regenerate maple_leafs_wins.png.
 import matplotlib.pyplot as plt
 import numpy as np
 
-import hockey_colors as hc
+import vizlib as vz
 
-blue, white = hc.get_colors("maple_leafs")   # ('#00205B', '#FFFFFF')
+blue, white = vz.get_colors("maple_leafs")   # ('#00205B', '#FFFFFF')
 BG, MUTE, INK = "#EEF2F7", "#7C8BA1", "#1B2A45"
 
 seasons = ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20",

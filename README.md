@@ -1,4 +1,4 @@
-# hockey-colors
+# NHL Team Colors
 
 Pick two colors from your favorite NHL team to use in your Matplotlib
 visuals. Tiny API, one dependency (Matplotlib), all 32 NHL teams built in.

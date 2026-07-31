@@ -1,8 +1,7 @@
-"""hockey_colors: pick two colors from an NHL team for your visuals.
+"""vizlib: pick two colors from an NHL team for your visuals.
 
-The only dependency is Matplotlib. Import name uses underscores
-(``import hockey_colors``); the install name uses hyphens
-(``pip install hockey-colors``).
+The only dependency is Matplotlib. Install and import under the same name:
+``pip install vizlib`` then ``import vizlib``.
 """
 
 from matplotlib.colors import LinearSegmentedColormap

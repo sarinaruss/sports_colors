@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sports-colors"
+version = "0.1.0"
+description = "Pick two colors from your favorite sports team for your visuals."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Sarina Russ" }]
+keywords = ["sports", "colors", "matplotlib", "visualization", "palette"]
+dependencies = ["matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/sarinaruss/sports_colors"
+
+[tool.setuptools.packages.find]
+where = ["src"]
